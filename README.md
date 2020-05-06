@@ -9,7 +9,7 @@ Right click on it, then towards the bottom, there is an option that says Add as 
 Click ok on the dialogue box. With that, the hard stuff is all over dumb dumb. Remember, use intellij.
 Open up build.gradle located on the top, and scroll down until you get to line 207.
 If you are using the superior ide, there will be a green play button next to it. Click it and then select the top option.
-Tbh at this point it might give you errors, but just keep trying until you have the output in /build/libs
+Tbh at this point it might give you errors, but like... those are practically warnings, don't worry about it, let the build finish until you have the output in /build/libs
 Back to your regular scheduled README!
 
 
