@@ -4,6 +4,7 @@ import codechicken.lib.packet.PacketCustom
 import codechicken.lib.packet.PacketCustom.{IClientPacketHandler, IServerPacketHandler}
 import mrtjp.core.item.{ItemKey, ItemKeyStack}
 import mrtjp.projectred.core.libmc.PRLib
+import mrtjp.projectred.ProjectRedTransportation
 import net.minecraft.client.Minecraft
 import net.minecraft.entity.player.EntityPlayerMP
 import net.minecraft.network.play.{INetHandlerPlayClient, INetHandlerPlayServer}
@@ -183,7 +184,15 @@ object TransportationSPH extends TransportationPH with IServerPacketHandler
     {
         val slot = packet.readUByte()
         val stack = packet.readItemStack()
-        player.inventory.setInventorySlotContents(slot, stack)
-        player.inventory.markDirty()
+        if (stack.getItem == ProjectRedTransportation.itemRoutingChip) {
+            val playerStack = player.inventory.getStackInSlot(slot)
+            if (playerStack.getItem == ProjectRedTransportation.itemRoutingChip) {
+                val chip = ItemRoutingChip.loadChipFromItemStack(stack)
+                ItemRoutingChip.saveChipToItemStack(playerStack, chip)
+
+                player.inventory.setInventorySlotContents(slot, playerStack)
+                player.inventory.markDirty()
+            }
+        }
     }
 }
