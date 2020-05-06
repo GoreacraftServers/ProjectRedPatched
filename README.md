@@ -1,7 +1,9 @@
 Blah blah blah actual mod description below, no one cares.
 It's yo boi, music, here to tell you how to properly build this gay project.
 
-If you are using intellij, congrats, you're doing great. Intellij gets salty that this project is using 
+If you are using intellij, congrats, you're doing great. You need to import the project as a gradle project,
+there should be a dialogue box at the bottom asking you, just click it and auto import. This will not appear if you've 
+use gradle in the past. Intellij gets salty that this project is using 
 gradle version 2.6, and claims that it isn't compatible. That is wrong. If you clicked that shiny
 blue link to upgrade gradle to version 4.x.x, you're dumb and need to try this again. You actually don't even
 need to touch gradle. Now comes the moderately hard step. There is a directory called lib, and in it is cofhcore.....
