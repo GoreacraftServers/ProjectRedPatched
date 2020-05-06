@@ -1,3 +1,22 @@
+Blah blah blah actual mod description below, no one cares.
+It's yo boi, music, here to tell you how to properly build this gay project.
+
+If you are using intellij, congrats, you're doing great. Intellij gets salty that this project is using 
+gradle version 2.6, and claims that it isn't compatible. That is wrong. If you clicked that shiny
+blue link to upgrade gradle to version 4.x.x, you're dumb and need to try this again. You actually don't even
+need to touch gradle. Now comes the moderately hard step. There is a directory called lib, and in it is cofhcore.....
+Right click on it, then towards the bottom, there is an option that says Add as Library...
+Click ok on the dialogue box. With that, the hard stuff is all over dumb dumb. Remember, use intellij.
+Open up build.gradle located on the top, and scroll down until you get to line 207.
+If you are using the superior ide, there will be a green play button next to it. Click it and then select the top option.
+Tbh at this point it might give you errors, but just keep trying until you have the output in /build/libs
+Back to your regular scheduled README!
+
+
+
+
+
+
 ProjectRed
 ==========
 Project Red is a mod written for Forge Multipart. It brings vastly improved redstone control to Minecraft via compact wiring and integrated logic gates.
